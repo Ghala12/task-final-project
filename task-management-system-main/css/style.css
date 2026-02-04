@@ -1,0 +1,251 @@
+/* ===========================
+   ROOT VARIABLES
+=========================== */
+:root {
+  --primary: #1A73E8;
+  --text-dark: #1F1F1F;
+  --text-light: #6B6B6B;
+  --bg: #F5F7FA;
+  --white: #FFFFFF;
+  --border: #E5E7EB;
+  --success: #22C55E;
+  --warning: #F59E0B;
+
+  --radius: 12px;
+  --padding-section: 40px;
+  --padding-card: 20px;
+
+  --font-main: "Tajawal", sans-serif;
+}
+
+/* ===========================
+   GLOBAL
+=========================== */
+body {
+  font-family: var(--font-main);
+  background: var(--bg);
+  color: var(--text-dark);
+  margin: 0;
+  padding: 0;
+  direction: rtl;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+h1, h2, h3, h4 {
+  margin: 0 0 15px;
+  font-weight: 600;
+}
+
+p {
+  margin: 0 0 10px;
+  color: var(--text-light);
+}
+
+/* ===========================
+   BUTTONS
+=========================== */
+.btn {
+  background: var(--primary);
+  color: var(--white);
+  padding: 12px 20px;
+  border-radius: var(--radius);
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.btn-secondary {
+  background: var(--white);
+  color: var(--primary);
+  border: 1px solid var(--primary);
+}
+
+/* ===========================
+   INPUTS & FORMS
+=========================== */
+input, select, textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  margin-bottom: 15px;
+  font-size: 15px;
+  background: var(--white);
+}
+
+label {
+  font-size: 14px;
+  margin-bottom: 5px;
+  display: block;
+}
+
+/* ===========================
+   CARDS
+=========================== */
+.card {
+  background: var(--white);
+  padding: var(--padding-card);
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  margin-bottom: 20px;
+}
+
+/* ===========================
+   TABLES
+=========================== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--white);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+th, td {
+  padding: 15px;
+  border-bottom: 1px solid var(--border);
+  text-align: right;
+}
+
+th {
+  background: #F0F3F7;
+  font-weight: 600;
+}
+
+.status-active {
+  color: var(--success);
+  font-weight: bold;
+}
+
+/* ===========================
+   HEADER
+=========================== */
+header {
+  background: var(--white);
+  padding: 15px 20px;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: var(--primary);
+}
+
+/* ===========================
+   SIDEBAR
+=========================== */
+.sidebar {
+  width: 240px;
+  background: var(--white);
+  height: 100vh;
+  padding: 20px;
+  border-left: 1px solid var(--border);
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+.sidebar a {
+  display: block;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: var(--radius);
+  color: var(--text-dark);
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.sidebar a:hover,
+.sidebar a.active {
+  background: var(--primary);
+  color: var(--white);
+}
+
+/* ===========================
+   LOGIN / SIGNUP PAGES
+=========================== */
+.auth-box {
+  width: 400px;
+  margin: 80px auto;
+  background: var(--white);
+  padding: 30px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  text-align: center;
+}
+
+.auth-box h2 {
+  margin-bottom: 25px;
+}
+
+.auth-box a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+/* ===========================
+   PROFILE PAGE
+=========================== */
+.profile-section {
+  background: var(--white);
+  padding: 25px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  margin-bottom: 20px;
+}
+
+.profile-section h3 {
+  margin-bottom: 15px;
+}
+
+/* ===========================
+   TASK DETAILS
+=========================== */
+.task-box {
+  background: var(--white);
+  padding: 25px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+}
+
+.task-box .title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.task-box .info {
+  margin-bottom: 10px;
+}
+
+.task-box .info span {
+  font-weight: bold;
+}
+
+/* ===========================
+   TEAM PAGE
+=========================== */
+.team-box {
+  background: var(--white);
+  padding: 25px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+}
+
+.team-box h2 {
+  margin-bottom: 20px;
+}
