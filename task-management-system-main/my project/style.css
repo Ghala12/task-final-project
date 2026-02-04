@@ -1,0 +1,88 @@
+/* إعدادات الخطوط والخلفية العامة */
+body {
+    background-color: #f8f4f0; /* اللون البيج الفاتح جداً الموجود في خلفية الصورة */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* حاوية تسجيل الدخول البيضاء */
+.login-container {
+    background-color: #ffffff;
+    padding: 50px 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    width: 400px;
+    text-align: center;
+}
+
+h1 {
+    font-weight: 400;
+    margin-bottom: 40px;
+    color: #000;
+}
+
+/* تنسيق حقول الإدخال */
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #d1d1d1;
+    border-radius: 4px;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.1); /* الظل الداخلي كما في الصورة */
+}
+
+.input-icon {
+    width: 25px;
+    height: 25px;
+    padding: 10px;
+    border-left: 1px solid #eee;
+}
+
+input {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    text-align: right;
+    color: #a0a0a0;
+}
+
+input::placeholder {
+    color: #b8b8b8;
+}
+
+/* تنسيق الروابط */
+.links {
+    margin: 20px 0;
+}
+
+.links a {
+    display: block;
+    text-decoration: none;
+    color: #8e8e8e;
+    font-size: 14px;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+/* تنسيق الزر */
+.login-btn {
+    background-color: #ede0d4; /* لون الزر البيج المطفأ */
+    color: #ffffff;
+    border: none;
+    padding: 12px 60px;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.login-btn:hover {
+    background-color: #e2d1c3;
+}
